@@ -1,0 +1,20 @@
+Package: ccRauh
+Title: Clinical Cerebro-vascular Research group at AUH
+Version: 2023.11.28
+Authors@R: 
+    person("Andreas Gammelgaard", "Damsbo", , "agdamsbo@clin.au.dk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-7559-1154"))
+Description: Source of the lab meeting calendar and other work within the group.
+License: CC BY 4.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    pak,
+    renv,
+    styler
+Depends: 
+    targets,
+    tidyverse
+Imports:
+    usethis
