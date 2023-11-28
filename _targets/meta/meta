@@ -1,0 +1,12 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|a5f7a0c22176cf3e|||||||||||||||
+csv_labmeeting|stem|ba8e6640f61de0e5|ded861865d33f38b|ef46db3751d8e999|-1717403943|data/labmeetings.csv|t19689.4935457641s|0d85b7b0c9d906fe|328|file|local|vector|||0.004||
+data|object|12571cb05955f701|||||||||||||||
+df_labmeeting|stem|7ac7d61d0843c1b9|1f250a5fb5aee772|db191df20dfb957a|1452222976||t19689.497864671s|1e85e50b3bd5846b|284|rds|local|vector|||0.001||
+df2ical|function|67581ca7b4e43f6c|||||||||||||||
+ical_push|function|e329a7561fffeb03|||||||||||||||
+ics_labmeeting|stem|48f6d3057178e4b2|3e4ce0da22914cd9|ef46db3751d8e999|-781806199|/Users/au301842/ccRauh/ccrauh_labmeeting.ics|t19689.5358493707s|83cd3b004eebc9f2|1226|file|local|vector|||0.012||
+ics_labmeeting_create|stem|581355bf828aba97|806a8b2e24f2e027|a0102cb760390b41|-116361395||t19689.5418355991s|a1c456b03adbfbf8|44|rds|local|vector|||0.17||
+ics_upload|stem|581355bf828aba97|ccbcc21ab0e489d9|6c36e13b7daaea52|-1574943424||t19689.5418334779s|a1c456b03adbfbf8|44|rds|local|vector|||1.472||
+quarto_website|stem|b71c1bedbdfa42a2|b5fc0511a22a1e13|c49056623a062e17|1602464050|_site*doc/lab-meetings.qmd*index.qmd*LICENSE.md*_quarto.yml|t19689.5278733091s|6a272d1ae13eaa0f|20309|file|local|vector|||2.685||
+read_csv|function|f9ca7cc250a8eaff|||||||||||||||

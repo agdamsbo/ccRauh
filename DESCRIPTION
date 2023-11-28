@@ -12,11 +12,20 @@ RoxygenNote: 7.2.3
 Suggests: 
     pak,
     renv,
+    roxygen2,
     styler
 Depends: 
     targets,
     tidyverse
 Imports:
+    calendar,
+    fs,
+    git2r,
+    gt,
+    here,
+    hms,
+    quarto,
+    tarchetypes,
     usethis
 URL: https://github.com/agdamsbo/ccRauh
 BugReports: https://github.com/agdamsbo/ccRauh/issues
