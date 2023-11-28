@@ -53,3 +53,4 @@ rsconnect/
 .Rdata
 .DS_Store
 .quarto
+_site

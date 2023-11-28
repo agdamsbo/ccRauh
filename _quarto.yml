@@ -7,7 +7,7 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: doc/lab-meetings
+      - href: doc/lab-meetings.qmd
         text: Lab meetings
   page-footer:
     center:

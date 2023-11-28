@@ -17,10 +17,17 @@ affiliations:
     url: https://www.en.auh.dk/departments/danish-stroke-centre/
 ---
 
+```{r setup}
+#| message: false
+targets::tar_config_set(store = here::here("_targets"))
+library(tidyverse)
+library(targets)
+```
+
 ## Get the calendar on your device before your neighbour!
 
 Follow this link, to get the calendar on your device:
-[link](ccrauh_labmeeting.ics)
+[link](webcal://raw.githubusercontent.com/agdamsbo/ccRauh/main/ccrauh_labmeeting.ics)
 
 ## Here are the upcoming events for an overview
 
