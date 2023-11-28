@@ -18,3 +18,5 @@ Depends:
     tidyverse
 Imports:
     usethis
+URL: https://github.com/agdamsbo/ccRauh
+BugReports: https://github.com/agdamsbo/ccRauh/issues
