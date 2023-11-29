@@ -32,5 +32,5 @@ Follow this link, to get the calendar on your device:
 ## Here are the upcoming events for an overview
 
 ```{r}
-targets::tar_read("df_labmeeting") |> dplyr::mutate(titel= ifelse(titel=="","Emne kommer",titel)) |> gt::gt()
+targets::tar_read(gt_labmeeting)
 ```

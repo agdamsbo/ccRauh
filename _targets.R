@@ -59,6 +59,10 @@ list(
     command = read_csv(csv_labmeeting)
   ),
   tar_target(
+    name = gt_labmeeting,
+    command = clean_meetings(df_labmeeting)
+  ),
+  tar_target(
     name = ics_labmeeting_create,
     command = df2ical(df_labmeeting)
   ),

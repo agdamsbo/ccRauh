@@ -9,7 +9,7 @@ website:
         text: Home
       - href: doc/lab-meetings.qmd
         text: Lab meetings
-      - href: doc/onboarding.qmd
+      - href: doc/on-boarding.qmd
         text: On-boarding
   page-footer:
     center:
