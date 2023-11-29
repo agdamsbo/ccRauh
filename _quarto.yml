@@ -9,6 +9,8 @@ website:
         text: Home
       - href: doc/lab-meetings.qmd
         text: Lab meetings
+      - href: doc/onboarding.qmd
+        text: On-boarding
   page-footer:
     center:
       - text: "License: CC BY 4.0"

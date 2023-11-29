@@ -1,0 +1,14 @@
+---
+title: "Onboarding"
+format: html
+date: last-modified
+---
+
+Here we would love to show a collection of good advices and
+intro-material for new members of the research group.
+
+# Bookmarks
+
+The group has a team chat and space on Microsoft Teams. If you're not
+already a member, [please apply
+here](https://teams.microsoft.com/l/team/19%3azPnPvVesd14A0c17QcULwshWEQqdi4dgXr3mLNIhvok1%40thread.tacv2/conversations?groupId=0c900c5c-f177-47d4-946a-17c8338c2758&tenantId=61fd1d36-fecb-47ca-b7d7-d0df0370a198).
