@@ -32,5 +32,6 @@ Follow this link, to get the calendar on your device:
 ## Here are the upcoming events for an overview
 
 ```{r}
-targets::tar_read(gt_labmeeting)
+targets::tar_read(gt_labmeeting) |>
+    gt::gt()
 ```

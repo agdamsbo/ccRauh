@@ -32,8 +32,7 @@ clean_meetings <- function(data) {
       Time = glue::glue("{time2hm(start)} - {time2hm(end)}"),
       Emne = ifelse(titel == "", "Emne kommer", titel),
       Place = place
-    ) |>
-    gt::gt()
+    ) 
 }
 
 #' Data frame to ical calendar
