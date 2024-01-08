@@ -2,20 +2,6 @@
 title: "Lab meetings"
 format: html
 date: last-modified
-author:
-  - name: Andreas
-    orcid: 0000-0002-7559-1154
-    email: andrlr@rm.dk
-    url: https://pure.au.dk/portal/en/persons/andreas-gammelgaard-damsbo(e3c4afce-3eba-4456-8b8b-2fd90775c87a).html
-    affiliations:
-      - ref: dsc
-affiliations:
-  - id: dsc
-    name: Danish Stroke Centre, AUH
-    department: Neurology
-    city: Aarhus
-    country: Denmark
-    url: https://www.en.auh.dk/departments/danish-stroke-centre/
 ---
 
 ```{r setup}

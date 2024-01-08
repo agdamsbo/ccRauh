@@ -25,7 +25,7 @@ knitr:
     echo: false
 
 execute:
-  freeze: true
+  freeze: auto
   echo: true
 
 editor:
