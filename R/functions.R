@@ -28,8 +28,8 @@ clean_meetings <- function(data) {
     dplyr::transmute(
       Date = format(as.POSIXct(date),"%d.%b.%Y"),
       Time = glue::glue("{time2hm(start)} - {time2hm(end)}"),
-      Emne = ifelse(titel == "", "Emne kommer", titel),
-      Place = place
+      Subject = ifelse(titel == "", "Emne følger", titel),
+      Location = place
     ) 
 }
 

@@ -77,6 +77,7 @@ list(
   ),
   tar_quarto(
     name = quarto_website,
-    path = "."
+    path = ".",
+    cue = tar_cue(mode = "always")
   )
 )
