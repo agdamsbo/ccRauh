@@ -7,8 +7,6 @@ read_csv <- function(path) {
   read.csv(path)
 }
 
-data <- targets::tar_read(df_labmeeting)
-
 #' Converts time character string to H:M character string
 #'
 #' @param time data

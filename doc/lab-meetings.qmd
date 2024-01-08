@@ -1,6 +1,7 @@
 ---
 title: "Lab meetings"
 format: html
+date: last-modified
 author:
   - name: Andreas
     orcid: 0000-0002-7559-1154
