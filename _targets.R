@@ -73,7 +73,8 @@ list(
   ),
   tar_target(
     name = ics_upload,
-    command = ical_push(ics_labmeeting)
+    command = ical_push(ics_labmeeting),
+    cue = tar_cue(mode = "always")
   ),
   tar_quarto(
     name = quarto_website,
