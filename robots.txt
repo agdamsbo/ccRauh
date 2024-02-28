@@ -1,1 +1,1 @@
-Sitemap: https://github.com/agdamsbo/ccRauh/sitemap.xml
+Sitemap: https://agdamsbo.github.io/ccRauh/sitemap.xml
