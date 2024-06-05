@@ -11,6 +11,11 @@ library(tidyverse)
 library(targets)
 ```
 
+```{r}
+#| include: false
+system(paste("open",here::here("data/labmeetings.csv")))
+```
+
 ## Get the calendar on your device before your neighbour!
 
 Follow this link, to get the calendar on your device:
