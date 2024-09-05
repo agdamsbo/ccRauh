@@ -7,13 +7,24 @@ date: last-modified
 ```{r setup}
 #| message: false
 targets::tar_config_set(store = here::here("_targets"))
-library(tidyverse)
-library(targets)
+# library(tidyverse)
+# library(targets)
 ```
 
 ```{r}
 #| include: false
-system(paste("open",here::here("data/labmeetings.csv")))
+# dplyr::bind_rows(
+#   read_csv("data/labmeetings.csv"),
+#   next_meetings(
+#     day = "Monday",
+#     index = 1,
+#     start = Sys.Date(),
+#     stop = as.Date("2024-12-31")
+#   )[-1, ]
+# ) |>
+#   write.csv(here::here("data/labmeetings.csv"))
+
+# system(paste("open", here::here("data/labmeetings.csv")))
 ```
 
 ## Get the calendar on your device before your neighbour!
@@ -25,5 +36,6 @@ Follow this link, to get the calendar on your device:
 
 ```{r}
 targets::tar_read(gt_labmeeting) |>
-    gt::gt()
+  dplyr::filter(Subject!="AFLYST") |> 
+  gt::gt()
 ```

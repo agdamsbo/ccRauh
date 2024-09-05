@@ -4,6 +4,7 @@
 #'
 #' @return data frame
 read_csv <- function(path) {
+  # readr::read_csv(path)
   read.csv(path)
 }
 
@@ -31,6 +32,54 @@ clean_meetings <- function(data) {
       Subject = ifelse(titel == "", "Emne følger", titel),
       Location = place
     ) 
+}
+
+
+#' Get indexed recuring meeting dates
+#'
+#' @param day day of the week. Default is "Monday"
+#' @param index monthly occurance. Default is 1.
+#' @param start Date to start counting. Default is Sys.Date()
+#' @param stop Date to stop. Defaults to one year after start.
+#'
+#' @return
+#' @export
+#'
+#' @examples
+indexed_meet <- function(day = "Monday", index = 1, start = Sys.Date(), stop=NULL) {
+  if (is.null(stop)) stop <- as.Date(start + lubridate::dmonths(12))
+  df <- tibble::tibble(
+    dates = seq(start, stop, by = "days"),
+    days = weekdays(dates),
+    ym = format(dates, "%Y%m")
+  ) |>
+    dplyr::filter(days %in% day) |>
+    dplyr::group_by(ym, days) |>
+    dplyr::mutate(rank = rank(dates)) |>
+    dplyr::filter(rank %in% index) |>
+    dplyr::ungroup()
+  
+  df[["dates"]]
+}
+
+#' Creates data.frame of upcoming meetings.  Content to be filled manually.
+#'
+#' @param t.start time to start
+#' @param t.end time to end
+#' @param ... passed on to indexed_meet()
+#'
+#' @return
+#' @export
+#'
+#' @examples
+next_meetings <- function(t.start = "09:00:00", t.end = "10:00:00", ...) {
+  data.frame(
+    date = as.character(indexed_meet(...)),
+    place = "",
+    titel = "",
+    start = t.start,
+    end = t.end
+  )
 }
 
 #' Data frame to ical calendar

@@ -50,13 +50,8 @@ tar_source()
 # Replace the target list below with your own:
 list(
   tar_target(
-    name = csv_labmeeting,
-    command = "data/labmeetings.csv",
-    format = "file" # efficient storage for large data frames
-  ),
-  tar_target(
     name = df_labmeeting,
-    command = read_csv(csv_labmeeting)
+    command = read_csv("data/labmeetings.csv")
   ),
   tar_target(
     name = gt_labmeeting,
