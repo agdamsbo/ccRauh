@@ -11,7 +11,21 @@
     "href": "doc/on-boarding.html",
     "title": "Onboarding",
     "section": "",
-    "text": "Here we would love to show a collection of good advices and intro-material for new members of the research group.\n\nBookmarks\nThe group has a team chat and space on Microsoft Teams. If you’re not already a member, please apply here."
+    "text": "Here we would love to show a collection of good advices and intro-material for new members of the research group.\nAt the moment it is very rudimentary, but away you go!"
+  },
+  {
+    "objectID": "doc/on-boarding.html#teams",
+    "href": "doc/on-boarding.html#teams",
+    "title": "Onboarding",
+    "section": "Teams",
+    "text": "Teams\nThe group has a team chat and space on Microsoft Teams. If you’re not already a member, please apply here."
+  },
+  {
+    "objectID": "doc/on-boarding.html#learning-programming",
+    "href": "doc/on-boarding.html#learning-programming",
+    "title": "Onboarding",
+    "section": "Learning programming",
+    "text": "Learning programming\nFor a reproducible data management, analyses, visualisation and writing, programming is the way to go. R covers the whole spectrum, but you can also use different programs for each step.\nThere is a plethora of resources for learning programming for use in health science and it can be difficult to decide where to start. In this group the preferred languages are Stata or R.\nExercism is a great place to start for open languages (not Stata, but R, Python, Julia or something more exotic), where everything can run in the browser and you don´t need to download anything. You can track your progress and get hints. It’s also a great place to practice after you got the hang of the basics, remembering the Law of the instrument:\n\n“If the only tool you have is a hammer, it is tempting to treat everything as if it were a nail.”\n\n\nOn reproducible writing\nHere are some advices on academic writing in RStudio (the very popular R editor, that does much more than just that) with Quarto: Some Quarto PDF formatting tips, with particular reference to thesis writing"
   },
   {
     "objectID": "LICENSE.html",
