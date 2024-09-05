@@ -2,13 +2,50 @@
 title: "Onboarding"
 format: html
 date: last-modified
+editor: 
+  markdown: 
+    wrap: 72
+bibliography: references.bib
+toc: true
 ---
 
 Here we would love to show a collection of good advices and
 intro-material for new members of the research group.
 
-# Bookmarks
+At the moment it is very rudimentary, but away you go!
+
+## Teams
 
 The group has a team chat and space on Microsoft Teams. If you're not
 already a member, [please apply
 here](https://teams.microsoft.com/l/team/19%3azPnPvVesd14A0c17QcULwshWEQqdi4dgXr3mLNIhvok1%40thread.tacv2/conversations?groupId=0c900c5c-f177-47d4-946a-17c8338c2758&tenantId=61fd1d36-fecb-47ca-b7d7-d0df0370a198).
+
+## Learning programming
+
+For a reproducible data management, analyses, visualisation and writing,
+programming is the way to go. *R* covers the whole spectrum, but you can
+also use different programs for each step.
+
+There is a plethora of resources for learning programming for use in
+health science and it can be difficult to decide where to start. In this
+group the preferred languages are Stata or *R*.
+
+[Exercism](https://exercism.org/) is a great place to start for open
+languages (not Stata, but *R*, Python, Julia or something more exotic),
+where everything can run in the browser and you don´t need to download
+anything. You can track your progress and get hints. It's also a great
+place to practice after you got the hang of the basics, remembering [the
+Law of the
+instrument](https://en.wikipedia.org/wiki/Law_of_the_instrument):
+
+> "If the only tool you have is a hammer, it is tempting to treat
+> everything as if it were a nail."
+
+### On reproducible writing
+
+Here are some advices on academic writing in RStudio (the very popular R
+editor, that does much more than just that) with Quarto: [Some Quarto
+PDF formatting tips, with particular reference to thesis
+writing](https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/)
+
+<!-- ## R and REDCap -->
