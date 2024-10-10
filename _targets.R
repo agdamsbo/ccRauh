@@ -49,9 +49,10 @@ tar_source()
 
 # Replace the target list below with your own:
 list(
+  tar_target(csv_labmeetings, "data/labmeetings.csv", format = "file"),
   tar_target(
     name = df_labmeeting,
-    command = read_csv("data/labmeetings.csv")
+    command = readr::read_csv(csv_labmeetings,col_select = -1)
   ),
   tar_target(
     name = gt_labmeeting,

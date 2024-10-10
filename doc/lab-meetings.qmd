@@ -27,7 +27,7 @@ targets::tar_config_set(store = here::here("_targets"))
 # system(paste("open", here::here("data/labmeetings.csv")))
 ```
 
-## Get the calendar on your device before your neighbour!
+## Get the calendar on your device before your colleague! And then, please help your colleague.
 
 Follow this link, to get the calendar on your device:
 [link](webcal://raw.githubusercontent.com/agdamsbo/ccRauh/main/ccrauh_labmeeting.ics)
