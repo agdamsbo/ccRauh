@@ -48,4 +48,9 @@ editor, that does much more than just that) with Quarto: [Some Quarto
 PDF formatting tips, with particular reference to thesis
 writing](https://cameronpatrick.com/post/2023/07/quarto-thesis-formatting/)
 
-<!-- ## R and REDCap -->
+## On writing the dissertation
+
+Ugeskrift for Læger (The Danish Medical Association) has published an
+article and [a template](https://zenodo.org/records/10686655) on writing
+the PhD-dissertation. [Read the article
+here](https://ugeskriftet.dk/videnskab/praktisk-guide-til-skrive-en-phd-afhandling).
