@@ -52,7 +52,7 @@ list(
   tar_target(csv_labmeetings, "data/labmeetings.csv", format = "file"),
   tar_target(
     name = df_labmeeting,
-    command = readr::read_csv(csv_labmeetings,col_select = -1)
+    command = readr::read_csv(csv_labmeetings)
   ),
   tar_target(
     name = gt_labmeeting,

@@ -13,18 +13,19 @@ targets::tar_config_set(store = here::here("_targets"))
 
 ```{r}
 #| include: false
+#| eval: false
 # dplyr::bind_rows(
-#   read_csv("data/labmeetings.csv"),
+#   read_csv("data/labmeetings.csv") |> (\(.x){.x[-match("X",colnames(.x))]})(),
 #   next_meetings(
 #     day = "Monday",
 #     index = 1,
-#     start = Sys.Date(),
-#     stop = as.Date("2024-12-31")
-#   )[-1, ]
+#     start = as.Date("2025-01-01"),
+#     stop = as.Date(as.Date("2025-01-01")+lubridate::dmonths(6))
+#   )
 # ) |>
-#   write.csv(here::here("data/labmeetings.csv"))
+#   write.csv(here::here("data/labmeetings.csv"),row.names = FALSE)
 
-# system(paste("open", here::here("data/labmeetings.csv")))
+system(paste("open", here::here("data/labmeetings.csv")))
 ```
 
 ## Get the calendar on your device before your colleague! And then, please help your colleague.
@@ -36,6 +37,10 @@ Follow this link, to get the calendar on your device:
 
 ```{r}
 targets::tar_read(gt_labmeeting) |>
-  dplyr::filter(Subject!="AFLYST") |> 
+  dplyr::mutate(dplyr::across(dplyr::everything(), \(.x){
+    .x[is.na(.x)] <- "Uafklaret"
+    .x
+  })) |> 
+dplyr::filter(Subject != "AFLYST") |>
   gt::gt()
 ```

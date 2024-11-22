@@ -41,23 +41,41 @@ clean_meetings <- function(data) {
 #' @param index monthly occurance. Default is 1.
 #' @param start Date to start counting. Default is Sys.Date()
 #' @param stop Date to stop. Defaults to one year after start.
+#' @param only.work logical to only include work days. Default to TRUE
+#' @param work.calendar Calendar to use for workdays. Passed to 
+#' `RQuantLib::isBusinessDay()`
 #'
 #' @return
 #' @export
 #'
 #' @examples
-indexed_meet <- function(day = "Monday", index = 1, start = Sys.Date(), stop=NULL) {
-  if (is.null(stop)) stop <- as.Date(start + lubridate::dmonths(12))
+#' 
+#' indexed_meet()
+indexed_meet <- function(day = "Monday", index = 1, start = Sys.Date(), stop=NULL, only.work=TRUE, work.calendar="Denmark") {
+if (is.null(stop)) stop <- as.Date(start + lubridate::dmonths(12))
+  
+  ## Counts from the start of the month from the starting data
+  ## Will only include the relevant 
+  seq.start <- start-(lubridate::day(start)-1)
+  
+  dates <- seq(from=seq.start, to=stop, by = "days")
+  
+  if (only.work){
+  dates <- dates[RQuantLib::isBusinessDay(calendar="Denmark", dates=dates)]
+  }
+  
   df <- tibble::tibble(
-    dates = seq(start, stop, by = "days"),
+    dates = dates,
     days = weekdays(dates),
     ym = format(dates, "%Y%m")
   ) |>
     dplyr::filter(days %in% day) |>
     dplyr::group_by(ym, days) |>
     dplyr::mutate(rank = rank(dates)) |>
-    dplyr::filter(rank %in% index) |>
+    dplyr::filter(rank %in% index,
+                  dates > start) |>
     dplyr::ungroup()
+  
   
   df[["dates"]]
 }
