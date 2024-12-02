@@ -30,8 +30,9 @@ system(paste("open", here::here("data/labmeetings.csv")))
 
 ## Get the calendar on your device before your colleague! And then, please help your colleague.
 
-Follow this link, to get the calendar on your device:
-[link](webcal://raw.githubusercontent.com/agdamsbo/ccRauh/main/ccrauh_labmeeting.ics)
+Create a new subscription calendar in your calender and use this link
+(or click and subscribe):
+<webcal://raw.githubusercontent.com/agdamsbo/ccRauh/main/ccrauh_labmeeting.ics>
 
 ## Here are the upcoming events for an overview
 
