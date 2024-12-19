@@ -26,6 +26,7 @@ time2hm <- function(time) {
 #' @return
 clean_meetings <- function(data) {
   data |>
+    dplyr::filter(date>Sys.Date()) |> 
     dplyr::transmute(
       Date = format(as.POSIXct(date),"%d.%b.%Y"),
       Time = glue::glue("{time2hm(start)} - {time2hm(end)}"),
