@@ -45,3 +45,11 @@ targets::tar_read(gt_labmeeting) |>
 dplyr::filter(Subject != "AFLYST") |>
   gt::gt()
 ```
+
+## Standard meeting agenda
+
+-   [ ] 10 min: Significant news from the group or outside
+
+-   [ ] 20 min: Round of "What's going on"
+
+-   [ ] 30 min: Topic talk and discussion
