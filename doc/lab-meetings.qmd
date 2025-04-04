@@ -34,7 +34,7 @@ Create a new subscription calendar in your calender and use this link
 (or click and subscribe):
 <webcal://raw.githubusercontent.com/agdamsbo/ccRauh/main/ccrauh_labmeeting.ics>
 
-## Here are the upcoming events for an overview
+## Here are the upcoming lab-meetings
 
 ```{r}
 targets::tar_read(gt_labmeeting) |>
